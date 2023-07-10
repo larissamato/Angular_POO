@@ -35,9 +35,9 @@
         <td mat-cell *matCellDef="let aluno"> {{aluno.dt_nasc | date}} </td>
       </ng-container>
 
-      <ng-container matColumnDef="curso">
+      <ng-container matColumnDef="idcurso">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Curso </th>
-        <td mat-cell *matCellDef="let aluno"> {{aluno.nomeCurso}} </td>
+        <td mat-cell *matCellDef="let aluno"> {{aluno.curso.idcurso}} </td>
       </ng-container>
 
       <ng-container matColumnDef="update">
