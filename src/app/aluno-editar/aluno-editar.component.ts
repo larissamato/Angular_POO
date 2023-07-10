@@ -14,7 +14,7 @@ import { CursoService } from '../cursos/curso.service';
 export class AlunoEditarComponent implements OnInit {
   aluno: Aluno = new Aluno();
   cursos: Curso[] = [];
-  selectedCurso: number = 0;
+  selectedCursoId: number = 0;
 
   constructor(
     private alunoService: AlunoService,
@@ -53,6 +53,10 @@ export class AlunoEditarComponent implements OnInit {
   }
 
   atualizar(): void {
+    this.aluno.curso = {
+      idcurso: this.selectedCursoId
+    };
+
     this.alunoService.updateAluno(this.aluno.idaluno, this.aluno).subscribe(
       aluno => {
         this.alunoService.openSnackBar('Aluno atualizado com sucesso!');

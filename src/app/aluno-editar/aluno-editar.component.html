@@ -36,7 +36,7 @@
   <div class="input1">
     <mat-form-field appearance="outline">
       <mat-label>Curso</mat-label>
-      <mat-select [(value)]="selectedCurso" id="curso" name="curso">
+      <mat-select [(ngModel)]="selectedCursoId" name="cursoId">
         <mat-option *ngFor="let curso of cursos" [value]="curso.idcurso">{{ curso.nomecurso }}</mat-option>
       </mat-select>
     </mat-form-field>
