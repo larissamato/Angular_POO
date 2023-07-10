@@ -1,0 +1,9 @@
+.container {
+    position: absolute;
+    top: 80px;
+    bottom: 30px;
+    left: 210px;
+    padding: 30px;
+    background-color: white;
+    max-width: 80%;
+}

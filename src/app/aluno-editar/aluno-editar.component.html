@@ -1,0 +1,50 @@
+<div class="content">
+  <mat-card-title>Alunos</mat-card-title>
+  <br>
+  <mat-card-subtitle><br>Atualizar aluno</mat-card-subtitle>
+  <mat-divider></mat-divider>
+  <br>
+  <br>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Id.</mat-label>
+      <input matInput id="idaluno" name="idaluno" disabled [(ngModel)]="aluno.idaluno">
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do aluno</mat-label>
+      <input matInput id="nomealuno" name="nomealuno" required [(ngModel)]="aluno.nome">
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Sexo</mat-label>
+      <input matInput id="sexo" name="sexo" required [(ngModel)]="aluno.sexo">
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput id="dt_nasc" name="dt_nasc" required [(ngModel)]="aluno.dt_nasc">
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Curso</mat-label>
+      <mat-select [(value)]="selectedCurso" id="curso" name="curso">
+        <mat-option *ngFor="let curso of cursos" [value]="curso.idcurso">{{ curso.nomecurso }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="button1" (click)="atualizar()">
+    Atualizar <img class="img-btn" src="assets/img/check_box.png">
+  </div>
+  <div class="button2" (click)="cancelar()">
+    Cancelar <img class="img-btn" src="assets/img/cancel.png">
+  </div>
+</div>

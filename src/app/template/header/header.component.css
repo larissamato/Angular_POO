@@ -1,0 +1,18 @@
+.header { 
+    position: fixed; 
+    display: flex; 
+    padding-left: 10px; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 80px; 
+    width: 100%;
+    background: #048C4E; 
+    color: white; 
+}
+
+.logo { 
+    max-height: 80px;
+ }
+
+ 

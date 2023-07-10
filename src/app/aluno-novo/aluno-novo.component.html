@@ -1,0 +1,44 @@
+<div class="content">
+  <mat-card-title>Alunos</mat-card-title>
+  <br />
+  <mat-card-subtitle><br>Cadastrar Aluno</mat-card-subtitle>
+  <mat-divider></mat-divider>
+  <br />
+  <br />
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do Aluno</mat-label>
+      <input matInput id="nome" required [(ngModel)]="aluno.nome" name="nome" placeholder="Digite o nome do aluno" />
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Sexo</mat-label>
+      <input matInput id="sexo" required [(ngModel)]="aluno.sexo" name="sexo" placeholder="Digite o sexo do aluno" />
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput id="dt_nasc" required [(ngModel)]="aluno.dt_nasc" name="dt_nasc" placeholder="Digite a data de nascimento do aluno" />
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Cursos</mat-label>
+      <mat-select [(ngModel)]="selectedCursoId" name="cursoId">
+        <mat-option *ngFor="let curso of cursos" [value]="curso.idcurso">{{ curso.nomecurso }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="button">
+    <span (click)="salvar()">Cadastrar <img class="img-btn" src="assets/img/check_box.png" /></span>
+  </div>
+  <!-- Botão de Cancelar -->
+  <div class="button">
+    <span (click)="cancelar()">Cancelar <img class="img-btn" src="assets/img/cancel.png" /></span>
+  </div>
+</div>

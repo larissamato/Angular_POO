@@ -1,0 +1,42 @@
+.content{
+    padding: 10px;
+  }
+ 
+  mat-card-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #048C4E;
+  }
+  
+  mat-card-subtitle{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+.input1 {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    
+ }
+ 
+ .input2 {
+    position: absolute;
+    top: 140px;
+    left: 310px;  
+ }
+
+
+.button1{
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  font-size: 20px;
+}  
+   
+.button2{
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  font-size: 20px;
+}  

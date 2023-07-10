@@ -1,0 +1,21 @@
+.content{
+  padding: 10px;
+}
+
+mat-card-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #048C4E;
+}
+
+mat-card-subtitle{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.img-central{
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
